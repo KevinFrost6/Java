@@ -3,17 +3,26 @@ import java.util.Scanner;
 
 // Kevin Frost
 // 05/13/2015
+
+// Loads/manages a text file of a map
 public class LevelLoader 
 {
+	// Variables
 	private Character[][] level;
 	private int sizeX, sizeY;
 	
+	// Constructor
 	public LevelLoader() 
 	{
 		sizeX = 0;
 		sizeY = 0;
 	}
 	
+	/**
+	 * Loads a text file
+	 * @param fileName String. The file to be loaded.
+	 * @return Boolean. True if the file loaded, false if not.
+	 */
 	public boolean load(String fileName)
 	{
 		boolean result = true;
@@ -49,21 +58,36 @@ public class LevelLoader
 		return result;
 	}
 	
+	/**
+	 * 
+	 * @return The x size of the map (int)
+	 */
 	public int getSizeX()
 	{
 		return sizeX;
 	}
 	
+	/**
+	 * 
+	 * @return The y size of the map (int)
+	 */
 	public int getSizeY()
 	{
 		return sizeY;
 	}
 
+	/**
+	 * 
+	 * @return A character array of the map
+	 */
 	public Character[][] getLevel()
 	{
 		return level;
 	}
 	
+	/**
+	 * Outputs the map
+	 */
 	public void printLevel()
 	{
 		for (int yy = 0; yy < sizeY; yy++)
