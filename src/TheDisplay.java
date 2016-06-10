@@ -89,8 +89,8 @@ public class TheDisplay extends Applet implements Runnable//, KeyListener
 			// Images to load with full path name
 			img[0] = ImageIO.read(new File("~/Pictures/Grass32x32.jpg"));
 			img[1] = ImageIO.read(new File("~/Pictures/Fence.jpg"));
-			img[2] = ImageIO.read(new File("~/home/minauros/Pictures/Door.jpg"));
-			img[3] = ImageIO.read(new File("~/home/minauros/Pictures/Bush.jpg"));
+			img[2] = ImageIO.read(new File("~/Pictures/Door.jpg"));
+			img[3] = ImageIO.read(new File("~/Pictures/Bush.jpg"));
 		} 
 		catch (IOException e)
 		{
